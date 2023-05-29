@@ -16,8 +16,6 @@ function Update-Vencord {
     $lastPatchVersion = Get-VencordPatchedVersion
     $discordInstalls = Get-DiscordInstalls
 
-    Write-Host $discordInstalls
-
     if ($discordInstalls.Count -eq 0) {
         Write-Warning "Could not find any Discord"
         return
